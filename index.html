@@ -163,6 +163,14 @@
         height: var(--height-pc);
       }
     }
+
+    /* ===== 整張 banner 可點擊的連結 ===== */
+    .banner-link {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -183,6 +191,9 @@
         <p class="line offer">新品 9 折 · 套組 85 折起</p>
       </div>
     </div>
+
+    <!-- 點擊連結：把 href 換成你要的網址；想開新分頁就把 _top 改成 _blank -->
+    <a class="banner-link" href="https://its-saturday.com/page/doing-nothing" target="_top" aria-label="Doing Nothing 系列新品"></a>
 
   </div>
 
